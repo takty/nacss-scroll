@@ -19,13 +19,13 @@ function initialize(cs, opts = {}) {
 	onIntersect(doIntersect, cs, 0.5);
 	function doIntersect(vs) {
 		for (let i = 0; i < cs.length; i += 1) {
-			if (vs[i]) enableClass(true, cs[i], opts['styleVisible']);
+			if (vs[i]) setClass(cs[i], opts['styleVisible']);
 		}
 	}
 
 	window.addEventListener('beforeprint', () => {
 		for (const c of cs) {
-			enableClass(true, c, opts['styleVisible']);
+			setClass(c, opts['styleVisible']);
 		}
 	});
 }
