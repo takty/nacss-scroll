@@ -1,7 +1,7 @@
 {
-	"name": "nacss-table",
+	"name": "nacss-scroll",
 	"version": "1.0.0",
-	"description": "A Table Style Sheet",
+	"description": "A Scroll Effect Style Sheet",
 	"author": "Takuto Yanagida",
 	"main": "gulpfile.js",
 	"scripts": {
@@ -11,13 +11,13 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/takty/nacss-table.git"
+		"url": "git+https://github.com/takty/nacss-scroll.git"
 	},
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/takty/nacss-table/issues"
+		"url": "https://github.com/takty/nacss-scroll/issues"
 	},
-	"homepage": "https://github.com/takty/nacss-table#readme",
+	"homepage": "https://github.com/takty/nacss-scroll#readme",
 	"browserslist": [
 		"> 1%",
 		"last 2 versions",
