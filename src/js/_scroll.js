@@ -3,29 +3,28 @@
  * Scroll Effect
  *
  * @author Takuto Yanagida
- * @version 2021-10-25
+ * @version 2021-11-17
  *
  */
 
 
-function initialize(cs, opts = {}) {
-	if (cs.length === 0) return;
+function initialize(ts, opts = {}) {
+	if (ts.length === 0) return;
 
 	opts = Object.assign({
-		styleScroll : ':ncScroll',
-		styleVisible: ':ncScrollVisible',
+		styleEffect: ':ncScrollEffect',
 	}, opts);
 
-	onIntersect(doIntersect, cs, 0.5);
+	onIntersect(doIntersect, ts, 0.5, '* 10000% 0px 10000%');
 	function doIntersect(vs) {
-		for (let i = 0; i < cs.length; i += 1) {
-			if (vs[i]) setClass(cs[i], opts['styleVisible']);
+		for (let i = 0; i < ts.length; i += 1) {
+			if (vs[i]) setClass(ts[i], opts['styleEffect'], true, 'visible');
 		}
 	}
 
 	window.addEventListener('beforeprint', () => {
-		for (const c of cs) {
-			setClass(c, opts['styleVisible']);
+		for (const c of ts) {
+			setClass(c, opts['styleEffect'], true, 'visible');
 		}
 	});
 }

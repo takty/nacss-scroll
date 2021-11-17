@@ -1,9 +1,9 @@
 /**
  *
- * Scroll Style (JS)
+ * Scroll Effect
  *
  * @author Takuto Yanagida
- * @version 2021-11-11
+ * @version 2021-11-17
  *
  */
 
@@ -13,10 +13,10 @@ window['NACSS'] = window['NACSS'] || {};
 
 (function (NS) {
 
-	// @include _style-class.js
-	// @include _utilities.js
-
 	// @include _scroll.js
 	NS.scroll = initialize;
+
+	// @include _style-class.js
+	// @include _utilities.js
 
 })(window['NACSS']);
